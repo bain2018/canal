@@ -1,0 +1,25 @@
+{
+    "name": "bain2018/canal",
+    "description": "connect canal server via php client. fixed bugs",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "xingwenge",
+            "email": "470703808@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "google/protobuf": "^3.20",
+        "php":  ">=8.0",
+        "clue/socket-raw": "^1.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Com\\Alibaba\\Otter\\Canal\\Protocol\\": "src/protocol/Com/Alibaba/Otter/Canal/Protocol/",
+            "GPBMetadata\\": "src/protocol/GPBMetadata/",
+            "xingwenge\\canal_php\\": "src/"
+        }
+    }
+}
